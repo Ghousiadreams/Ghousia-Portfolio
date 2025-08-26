@@ -6,15 +6,11 @@
     <title>Ghousia Mulla - Aspiring Full Stack Developer</title>
     <meta name="description" content="Portfolio of Ghousia Mulla, an aspiring full stack developer passionate about creating seamless web experiences with modern technologies.">
     
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-    <!-- Custom CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Glassmorphism Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top glassmorphism-nav" id="navbar">
         <div class="container">
             <a class="navbar-brand text-white fw-bold" href="#home">Ghousia</a>
@@ -32,6 +28,9 @@
                         <a class="nav-link text-white" href="#about" aria-label="About section">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link text-white" href="#skills" aria-label="Skills section">Skills</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-white" href="#projects" aria-label="Projects section">Projects</a>
                     </li>
                     <li class="nav-item">
@@ -42,30 +41,29 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="hero-section min-vh-100 d-flex align-items-center">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6 order-2 order-lg-1 fade-in-left">
+                <div class="col-lg-6 order-lg-1 order-2 fade-in-left">
                     <div class="hero-content">
                         <h1 class="display-4 fw-bold text-white mb-3 typing-animation">
-                            I'm <span class="gradient-text">Ghousia Mulla</span>
+                            I'm <span class="gradient-text">Ghousia &nbsp;<br class="d-md-none">Mulla</span>
                         </h1>
                         <h2 class="h3 text-light mb-4 slide-in-up">Aspiring Full Stack Developer</h2>
                         <p class="lead text-light mb-4 slide-in-up-delay">
                             Turning ideas into reality with clean code and modern technologies. Building seamless, efficient, and user-friendly web experiences.
                         </p>
-                        <div class="hero-buttons slide-in-up-delay-2">
+                        <div class="hero-buttons d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start slide-in-up-delay-2 ms-4">
                             <button class="btn btn-primary btn-lg me-3 pulse-animation" onclick="scrollToSection('projects')" aria-label="View my projects">
                                 View Projects
                             </button>
-                            <button class="btn btn-outline-light btn-lg" onclick="scrollToSection('contact')" aria-label="Contact me">
-                                Contact Me
+                            <button class="btn btn-outline-light btn-lg" onclick="openResume()" aria-label="View my resume">
+                                View Resume
                             </button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 text-center fade-in-right">
+                <div class="col-lg-6 order-lg-2 order-1 text-center fade-in-right">
                     <div class="hero-image-container">
                         <div class="floating-animation">
                             <img src="src/assets/profile-image.png" alt="Ghousia Mulla - Professional photo" class="hero-image img-fluid">
@@ -75,12 +73,8 @@
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <i class="bi bi-chevron-down bounce-animation"></i>
-        </div>
-    </section>
+        </section>
 
-    <!-- About Section -->
     <section id="about" class="py-5 bg-dark">
         <div class="container">
             <div class="row">
@@ -97,7 +91,6 @@
                             I'm Ghousia, an aspiring Full Stack Developer passionate about building intuitive and high-performance web applications. I specialize in HTML, CSS, and JavaScript and am currently expanding my expertise in Java and React to develop scalable and efficient solutions. I thrive on solving real-world problems through technology and continuously enhance my skills in DSA and web development.
                         </p>
                         
-                        <!-- Highlights Section -->
                         <div class="row mb-5">
                             <div class="col-md-6 mb-3">
                                 <div class="highlight-card text-center p-4">
@@ -112,77 +105,83 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Skills Section -->
-                        <h4 class="text-white mb-4">Technical Skills</h4>
-                        <div class="row">
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-code-slash fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">HTML5</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-palette fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">CSS</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-braces fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">JavaScript</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-cup-hot fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">Java</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-arrow-clockwise fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">React</h6>
-                                    <small class="text-light">(Learning)</small>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-diagram-3 fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">DSA</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-database fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">SQL</h6>
-                                </div>
-                            </div>
-                            <div class="col-md-3 col-sm-6 mb-4">
-                                <div class="skill-card h-100 text-center p-4">
-                                    <i class="bi bi-git fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">Git & GitHub</h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="row mt-3">
-                            <div class="col-md-6 mx-auto">
-                                <div class="skill-card text-center p-4">
-                                    <i class="bi bi-server fs-1 text-white mb-3"></i>
-                                    <h6 class="text-white">Node.js</h6>
-                                    <small class="text-light">(In Progress)</small>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <section id="skills" class="py-5 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold text-white fade-in-up">Technical Skills</h2>
+                    <div class="section-divider mx-auto"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-code-slash fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">HTML5</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-palette fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">CSS</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-braces fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">JavaScript</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-cup-hot fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">Java</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-arrow-clockwise fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">React</h6>
+                        <small class="text-light">(Learning)</small>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-diagram-3 fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">DSA</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-database fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">SQL</h6>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="skill-card h-100 text-center p-4">
+                        <i class="bi bi-git fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">Git & GitHub</h6>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row mt-3">
+                <div class="col-md-6 mx-auto">
+                    <div class="skill-card text-center p-4">
+                        <i class="bi bi-server fs-1 text-white mb-3"></i>
+                        <h6 class="text-white">Node.js</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="projects" class="py-5">
         <div class="container">
             <div class="row">
@@ -195,20 +194,21 @@
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="project-card h-100 hover-lift">
                         <div class="card-body p-4">
-                            <i class="bi bi-shoe fs-1 text-white mb-3"></i>
-                            <h5 class="text-white mb-3">SneakElite</h5>
-                            <p class="text-light mb-3">An e-commerce website for sneaker enthusiasts (HTML, CSS, JS). Features responsive design, interactive UI, and smooth navigation.</p>
-                            <button class="btn btn-outline-light" aria-label="View SneakElite project">View Project</button>
+                            <i class="bi bi-geo-alt-fill fs-1 text-white mb-3"></i>
+                            <h5 class="text-white mb-3">TravelNest: MERN Stack Travel Planner</h5>
+                            <p class="text-light mb-3">A full-stack travel planning platform built with the MERN stack. It features user authentication, dynamic listings, and seamless map functionality using the Leaflet and OpenStreetMap APIs.</p>
+                            <a href="https://github.com/Ghousiadreams/TravelNest" target="_blank" class="btn btn-outline-light" aria-label="View TravelNest project">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="project-card h-100 hover-lift">
+                        
                         <div class="card-body p-4">
-                            <i class="bi bi-cloud-rain fs-1 text-white mb-3"></i>
-                            <h5 class="text-white mb-3">Weather Insights</h5>
-                            <p class="text-light mb-3">A web app for real-time weather updates (HTML, CSS, JS). Features clean UI, responsive design, accurate forecasts.</p>
-                            <button class="btn btn-outline-light" aria-label="View Weather Insights project">View Project</button>
+                            <i class="bi bi-check-circle fs-1 text-white mb-3"></i>
+                            <h5 class="text-white mb-3">SneakElite</h5>
+                            <p class="text-light mb-3">An e-commerce website for sneaker enthusiasts (HTML, CSS, JS). Features responsive design, interactive UI, and smooth navigation.</p>
+                            <a href="https://github.com/Ghousiadreams/SneakElite-website" target="_blank" class="btn btn-outline-light" aria-label="View SneakElite project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -218,17 +218,37 @@
                             <i class="bi bi-person-badge fs-1 text-white mb-3"></i>
                             <h5 class="text-white mb-3">Portfolio Website</h5>
                             <p class="text-light mb-3">Personal portfolio (HTML, CSS, JS). Features responsive design, smooth navigation, and interactive UI.</p>
-                            <button class="btn btn-outline-light" aria-label="View portfolio project">View Project</button>
+                            <a href="https://ghousiadreams.github.io/ghousia-portfolio-bloom/" target="_blank" class="btn btn-outline-light" aria-label="View portfolio project">View Project</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="project-card h-100 hover-lift">
                         <div class="card-body p-4">
-                            <i class="bi bi-scissors fs-1 text-white mb-3"></i>
-                            <h5 class="text-white mb-3">Rock Paper Scissors</h5>
-                            <p class="text-light mb-3">Fun interactive web game (HTML, CSS, JS). Responsive design, smooth gameplay, win/loss detection.</p>
-                            <button class="btn btn-outline-light" aria-label="View Rock Paper Scissors project">View Project</button>
+                            <i class="bi bi-cloud-rain fs-1 text-white mb-3"></i>
+                            <h5 class="text-white mb-3">Weather Insights</h5>
+                            <p class="text-light mb-3">A web app for real-time weather updates (HTML, CSS, JS). Features clean UI, responsive design, accurate forecasts.</p>
+                            <a href="https://ghousiadreams.github.io/Weather-Insights/" target="_blank" class="btn btn-outline-light" aria-label="View Weather Insights project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card h-100 hover-lift">
+                        <div class="card-body p-4">
+                            <i class="bi bi-check2-square fs-1 text-white mb-3"></i>
+                            <h5 class="text-white mb-3">To-Do App</h5>
+                            <p class="text-light mb-3">A clean and functional web-based To-Do List application to manage daily tasks with an intuitive UI.</p>
+                            <a href="https://ghousiadreams.github.io/Todo-App/" target="_blank" class="btn btn-outline-light" aria-label="View To-Do App project">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="project-card h-100 hover-lift">
+                        <div class="card-body p-4">
+                            <i class="bi bi-controller fs-1 text-white mb-3"></i>
+                            <h5 class="text-white mb-3">Simon Says Game</h5>
+                            <p class="text-light mb-3">A fun and interactive memory game where users must memorize and repeat a sequence of colors.</p>
+                            <a href="https://ghousiadreams.github.io/Simon-Says-Game/" target="_blank" class="btn btn-outline-light" aria-label="View Simon Says Game project">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -238,21 +258,22 @@
                             <i class="bi bi-grid-3x3 fs-1 text-white mb-3"></i>
                             <h5 class="text-white mb-3">Tic-Tac-Toe</h5>
                             <p class="text-light mb-3">Classic two-player strategy game (HTML, CSS, JS). Responsive design, smooth gameplay.</p>
-                            <button class="btn btn-outline-light" aria-label="View Tic-Tac-Toe project">View Project</button>
+                            <a href="https://ghousiadreams.github.io/Tic-Tac-Toe/" target="_blank" class="btn btn-outline-light" aria-label="View Tic-Tac-Toe project">View Project</a>
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="project-card h-100 hover-lift">
                         <div class="card-body p-4">
                             <i class="bi bi-key fs-1 text-white mb-3"></i>
                             <h5 class="text-white mb-3">Random Password Generator</h5>
                             <p class="text-light mb-3">Built in Java during internship. Secure password generator with customizable length and complexity.</p>
-                            <button class="btn btn-outline-light" aria-label="View Password Generator project">View Project</button>
+                            <a href="https://ghousia.github.io/random-password-generator/" target="_blank" class="btn btn-outline-light" aria-label="View Password Generator project">View Project</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 mx-auto mb-4">
+                <div class="col-lg-4 col-md-6 mb-4">
                     <div class="project-card h-100 hover-lift">
                         <div class="card-body p-4">
                             <div class="d-flex align-items-center mb-3">
@@ -261,7 +282,7 @@
                             </div>
                             <h5 class="text-white mb-3">AutoReel</h5>
                             <p class="text-light mb-3">AI-powered video generator project in React & Node.js. Features script writing, image generation, video creation, subtitles, and optional voiceover.</p>
-                            <button class="btn btn-outline-light" aria-label="View AutoReel project">Coming Soon</button>
+                            <a href="#" class="btn btn-outline-light" aria-label="View AutoReel project">Coming Soon</a>
                         </div>
                     </div>
                 </div>
@@ -269,114 +290,92 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-5 bg-dark">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="display-5 fw-bold text-white fade-in-up">Contact Me</h2>
-                    <div class="section-divider mx-auto"></div>
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5 fw-bold text-white fade-in-up">Contact Me</h2>
+                <div class="section-divider mx-auto"></div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form fade-in-up-delay">
-                        <form>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="fullname" class="form-label text-white">Full Name</label>
-                                    <input type="text" class="form-control custom-input" id="fullname" required aria-label="Your full name">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="email" class="form-label text-white">Email</label>
-                                    <input type="email" class="form-control custom-input" id="email" required aria-label="Your email">
-                                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-form fade-in-up-delay">
+                    <form id="contact-form" action="https://formspree.io/f/xeoljzoz" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="fullname" class="form-label text-white">Full Name</label>
+                                <input type="text" class="form-control custom-input" id="fullname" name="fullname" required aria-label="Your full name">
                             </div>
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="phone" class="form-label text-white">Phone Number</label>
-                                    <input type="tel" class="form-control custom-input" id="phone" aria-label="Your phone number">
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="subject" class="form-label text-white">Subject</label>
-                                    <input type="text" class="form-control custom-input" id="subject" required aria-label="Email subject">
-                                </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label text-white">Email</label>
+                                <input type="email" class="form-control custom-input" id="email" name="email" required aria-label="Your email">
                             </div>
-                            <div class="mb-4">
-                                <label for="message" class="form-label text-white">Your Message</label>
-                                <textarea class="form-control custom-input" id="message" rows="5" required aria-label="Your message"></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="phone" class="form-label text-white">Phone Number</label>
+                                <input type="tel" class="form-control custom-input" id="phone" name="phone" aria-label="Your phone number">
                             </div>
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-primary btn-lg pulse-animation" aria-label="Send message">
-                                    Send Message
-                                </button>
+                            <div class="col-md-6 mb-3">
+                                <label for="subject" class="form-label text-white">Subject</label>
+                                <input type="text" class="form-control custom-input" id="subject" name="subject" required aria-label="Email subject">
                             </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col-12 text-center">
-                    <div class="social-links">
-                        <a href="#" class="social-link me-3" aria-label="Instagram profile">
-                            <i class="bi bi-instagram fs-3"></i>
-                        </a>
-                        <a href="#" class="social-link me-3" aria-label="Facebook profile">
-                            <i class="bi bi-facebook fs-3"></i>
-                        </a>
-                        <a href="#" class="social-link me-3" aria-label="LinkedIn profile">
-                            <i class="bi bi-linkedin fs-3"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter profile">
-                            <i class="bi bi-twitter fs-3"></i>
-                        </a>
-                    </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label text-white">Your Message</label>
+                            <textarea class="form-control custom-input" id="message" name="message" rows="5" required aria-label="Your message"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg pulse-animation" aria-label="Send message">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="row mt-5">
+            <div class="col-12 text-center">
+                <div class="social-links">
+                    <a href="#" class="social-link me-3" aria-label="Instagram profile">
+                        <i class="bi bi-instagram fs-3"></i>
+                    </a>
+                    <a href="#" class="social-link me-3" aria-label="Facebook profile">
+                        <i class="bi bi-facebook fs-3"></i>
+                    </a>
+                    <a href="#" class="social-link me-3" aria-label="LinkedIn profile">
+                        <i class="bi bi-linkedin fs-3"></i>
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter profile">
+                        <i class="bi bi-twitter fs-3"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-dark text-center">
+    <footer class="py-2 bg-dark text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 mb-3">
-                    <h5 class="text-white mb-3">Navigation</h5>
+            <div class="row justify-content-center">
+                <div class="col-md-6 mb-3 text-center">
                     <div class="d-flex justify-content-center flex-wrap gap-3">
                         <a href="#home" class="text-light text-decoration-none">Home</a>
                         <a href="#about" class="text-light text-decoration-none">About Me</a>
-                        <a href="#about" class="text-light text-decoration-none">Skills</a>
+                        <a href="#skills" class="text-light text-decoration-none">Skills</a>
                         <a href="#projects" class="text-light text-decoration-none">Projects</a>
                         <a href="#contact" class="text-light text-decoration-none">Contact</a>
                     </div>
                 </div>
-                <div class="col-md-6 mb-3">
-                    <h5 class="text-white mb-3">Social Media</h5>
-                    <div class="social-links">
-                        <a href="#" class="social-link me-3" aria-label="Instagram profile">
-                            <i class="bi bi-instagram fs-4"></i>
-                        </a>
-                        <a href="#" class="social-link me-3" aria-label="Facebook profile">
-                            <i class="bi bi-facebook fs-4"></i>
-                        </a>
-                        <a href="#" class="social-link me-3" aria-label="LinkedIn profile">
-                            <i class="bi bi-linkedin fs-4"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter profile">
-                            <i class="bi bi-twitter fs-4"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
             <hr class="border-secondary my-4">
-            <p class="text-light mb-0">&copy; 2025 Mulla Ghousia | All Rights Reserved</p>
+            <p class="text-light mb-0">&copy; 2025 Ghousia Mulla | All Rights Reserved</p>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
-    <!-- Custom JavaScript -->
     <script>
         // Smooth scrolling function
         function scrollToSection(sectionId) {
@@ -432,11 +431,29 @@
             observer.observe(el);
         });
 
-        // Form submission
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
-            this.reset();
+        // Function to open the resume PDF in a new tab
+        function openResume() {
+            window.open("/src/assets/Ghousia_Resume2025.pdf", "_blank");
+        }
+
+        // Function to show success/error message for the form
+        window.addEventListener('load', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const success = urlParams.get('success');
+            
+            const form = document.querySelector('.contact-form form');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('alert', 'text-center');
+
+            if (success === 'true') {
+                messageDiv.classList.add('alert-success');
+                messageDiv.textContent = 'Thank you! Your message has been sent.';
+                form.prepend(messageDiv);
+            } else if (success === 'false') {
+                messageDiv.classList.add('alert-danger');
+                messageDiv.textContent = 'Oops! Something went wrong. Please try again.';
+                form.prepend(messageDiv);
+            }
         });
     </script>
 </body>
